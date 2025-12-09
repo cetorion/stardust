@@ -1,0 +1,22 @@
+{
+	"name": "Stardust",
+	"icons": [
+		{
+			"src": "/images/galaxy.svg",
+			"type": "image/svg+xml"
+		},
+		{
+			"src": "/images/galaxy.svg",
+			"type": "image/svg+xml"
+		},
+		{
+			"src": "/images/galaxy.png",
+			"type": "image/png",
+			"sizes": "512x475"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "green",
+	"background_color": "black"
+}
