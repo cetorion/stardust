@@ -1,0 +1,37 @@
+import { useState, useContext, createContext } from 'react'
+
+type StoreType = {
+	tip: string
+	setTip: React.Dispatch<React.SetStateAction<string>>
+	burst: boolean
+	setBurst: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const defaultStore: StoreType = {
+	tip: '',
+	setTip: () => {},
+	burst: false,
+	setBurst: () => {},
+}
+
+const Store = createContext(defaultStore)
+
+export const StoreProvider = ({ children }) => {
+	const [burst, setBurst] = useState(false)
+	const [tip, setTip] = useState('')
+
+	const store = {
+		burst: [burst, setBurst],
+		tip: [tip, setTip],
+	}
+
+	return <Store.Provider value={store}>{children}</Store.Provider>
+}
+
+export const useStore = (key: string) => {
+	const {
+		[key]: [data, setData],
+	} = useContext(Store)
+
+	return [data, setData]
+}

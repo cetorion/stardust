@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/store.jsx'
 import css from '../style/space.module.css'
 
 export const Space = () => {
-	const [tip, setTip] = useStore('tip')
-	const [burst, setBurst] = useStore('burst')
+	const [, setTip] = useStore('tip')
+	const [burst] = useStore('burst')
 	useEffect(() => setTip(''), [])
 	const navigate = useNavigate()
 	const star = '/images/star.svg'

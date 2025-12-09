@@ -8,7 +8,7 @@ import { Main } from '../pages/main.jsx'
 import '../style/reset.css'
 import '../style/global.css'
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<Router>
 			<StoreProvider>

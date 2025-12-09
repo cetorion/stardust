@@ -1,11 +1,10 @@
-import React from 'react'
 import { useStore } from '../store/store.jsx'
 import { useNavigate } from 'react-router-dom'
 import css from '../style/header.module.css'
 
 export const Header = () => {
 	const [tip, setTip] = useStore('tip')
-	const [burst, setBurst] = useStore('burst')
+	const [, setBurst] = useStore('burst')
 	const navigate = useNavigate()
 	const logoClick = () => {
 		setTip('')
