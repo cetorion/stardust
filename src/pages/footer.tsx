@@ -1,7 +1,7 @@
 import css from '../style/footer.module.css'
 
 export const Footer = () => {
-	let d = new Date().getFullYear()
+	const d = new Date().getFullYear()
 	return (
 		<footer className={css.footer}>
 			<span>S</span>

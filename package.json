@@ -6,16 +6,15 @@
 	"scripts": {
 		"serve": "vite",
 		"build": "tsc -b && vite build",
-		"lint": "eslint .",
 		"preview": "vite preview",
+		"lint:c": "eslint .",
+		"lint:w": "eslint --fix .",
 		"fmt:w": "prettier --write \"src/**/*.{ts,tsx}\"",
 		"fmt:c": "prettier --check \"src/**/*.{ts,tsx}\"",
-		"clean": "rm -rf dist",
-		"reset": "rm -rf node_modules yarn.lock && yarn cache clean && yarn install",
-		"bump": "yarn cache clean && yarn upgrade -L"
+		"reset": "rm -rf dist node_modules yarn.lock && yarn cache clean && yarn install",
+		"upset": "yarn cache clean && yarn upgrade -L"
 	},
 	"dependencies": {
-		"history": "^5.3.0",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
 		"react-markdown": "^10.1.0",

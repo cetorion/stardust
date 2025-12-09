@@ -22,8 +22,8 @@ export const Mark = (props) => {
 }
 
 const getMark = async (name) => {
-	let path = `/markdown/${name}.md`
-	let r = await fetch(path)
+	const path = `/markdown/${name}.md`
+	const r = await fetch(path)
 	if (!r.ok) {
 		throw new Error(await r.text())
 	}

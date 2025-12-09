@@ -1,7 +1,7 @@
 import React, { useState, useContext, createContext } from 'react'
 
 type Tuple<T> = [T, React.Dispatch<React.SetStateAction<T>>]
-
+type Props = { children: React.ReactNode }
 type StoreShape = {
 	tip: Tuple<string>
 	burst: Tuple<boolean>
@@ -14,9 +14,7 @@ const defaultStore: StoreShape = {
 
 const Store = createContext<StoreShape>(defaultStore)
 
-export const StoreProvider: React.FC<{ children?: React.ReactNode }> = ({
-	children,
-}) => {
+export function StoreProvider({ children }: Props) {
 	const [burst, setBurst] = useState(false)
 	const [tip, setTip] = useState('')
 
