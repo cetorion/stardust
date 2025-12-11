@@ -1,14 +1,16 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useStore } from '../store/store.jsx'
-import css from '../style/space.module.css'
+
+import { useStore } from '@/entry/store.tsx'
+
+import css from '~/space.module.css'
+import starSvg from '@/assets/images/star.svg'
 
 export const Space = () => {
 	const [, setTip] = useStore('tip')
 	const [burst] = useStore('burst')
 	useEffect(() => setTip(''), [])
 	const navigate = useNavigate()
-	const star = '/images/star.svg'
 
 	return (
 		<section className={css.space}>
@@ -19,7 +21,7 @@ export const Space = () => {
 				className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
 			>
 				<span className={`${burst ? css.show : ''} ${css.tip}`}> About </span>
-				<img src={star} />
+				<img src={starSvg} />
 			</figure>
 			<figure
 				onClick={() => navigate('/updates')}
@@ -28,7 +30,7 @@ export const Space = () => {
 				className={`${burst ? css.burst : ''} ${css.star} ${css.starb}`}
 			>
 				<span className={`${burst ? css.show : ''} ${css.tip}`}>Updates</span>
-				<img src={star} />
+				<img src={starSvg} />
 			</figure>
 			<figure
 				onClick={() => navigate('/statement')}
@@ -37,7 +39,7 @@ export const Space = () => {
 				className={`${burst ? css.burst : ''} ${css.star} ${css.starl}`}
 			>
 				<span className={`${burst ? css.show : ''} ${css.tip}`}>Statement</span>
-				<img src={star} />
+				<img src={starSvg} />
 			</figure>
 			<figure
 				onClick={() => navigate('/statistics')}
@@ -48,7 +50,7 @@ export const Space = () => {
 				<span className={`${burst ? css.show : ''} ${css.tip}`}>
 					Statistics
 				</span>
-				<img src={star} />
+				<img src={starSvg} />
 			</figure>
 			<figure
 				onClick={() => navigate('/metadata')}
@@ -60,7 +62,7 @@ export const Space = () => {
 					{' '}
 					Metadata{' '}
 				</span>
-				<img src={star} />
+				<img src={starSvg} />
 			</figure>
 		</section>
 	)

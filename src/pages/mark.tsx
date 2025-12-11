@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import MD from 'react-markdown'
-import { useStore } from '../store/store.jsx'
-import { cap } from '../entry/utils.js'
-import css from '../style/mark.module.css'
+
+import { useStore } from '@/entry/store.tsx'
+import { cap } from '@/entry/utils.ts'
+
+import css from '~/mark.module.css'
 
 export const Mark = (props) => {
 	const [mark, setMark] = useState('')

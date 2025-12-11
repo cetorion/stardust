@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Header } from './header.jsx'
-import { Footer } from './footer.jsx'
-import { Space } from './space.jsx'
-import { Mark } from './mark.jsx'
-import css from '../style/main.module.css'
+
+import { Header } from '@/pages/header.tsx'
+import { Footer } from '@/pages/footer.tsx'
+import { Space } from '@/pages/space.tsx'
+import { Mark } from '@/pages/mark.tsx'
+
+import css from '~/main.module.css'
+import galaxySvg from '@/assets/images/galaxy.svg'
 
 export const Main = () => {
 	const [show, setShow] = useState(false)
@@ -38,7 +41,7 @@ const Site = () => (
 const Load = () => (
 	<div className={css.load}>
 		<figure className={css.logo}>
-			<img src={'/images/galaxy.svg'} className={css.spin} />
+			<img src={galaxySvg} className={css.spin} />
 		</figure>
 	</div>
 )

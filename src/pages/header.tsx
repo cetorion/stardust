@@ -1,6 +1,9 @@
-import { useStore } from '../store/store.jsx'
 import { useNavigate } from 'react-router-dom'
-import css from '../style/header.module.css'
+
+import { useStore } from '@/entry/store.tsx'
+
+import css from '~/header.module.css'
+import galaxySvg from '@/assets/images/galaxy.svg'
 
 export const Header = () => {
 	const [tip, setTip] = useStore('tip')
@@ -23,7 +26,7 @@ export const Header = () => {
 				onMouseEnter={() => setBurst(true)}
 				onMouseLeave={() => setBurst(false)}
 			>
-				<img src={'/images/galaxy.svg'} className={css.spin} />
+				<img src={galaxySvg} className={css.spin} />
 			</figure>
 		</header>
 	)

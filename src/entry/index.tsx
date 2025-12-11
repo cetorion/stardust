@@ -2,11 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import { StoreProvider } from '../store/store.jsx'
-import { Main } from '../pages/main.jsx'
+import { StoreProvider } from '@/entry/store.tsx'
+import { Main } from '@/pages/main.tsx'
 
-import '../style/reset.css'
-import '../style/global.css'
+import '~/reset.css'
+import '~/global.css'
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
