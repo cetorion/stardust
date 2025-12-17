@@ -1,23 +1,14 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family:
+		-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+		Droid Sans, Helvetica Neue, sans-serif;
 }
 
 h1,
@@ -33,43 +24,43 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
 }
 
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
-  text-decoration: none;
-  color: inherit;
+	text-decoration-skip-ink: auto;
+	text-decoration: none;
+	color: inherit;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }

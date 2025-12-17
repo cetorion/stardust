@@ -20,7 +20,7 @@ export const Space = () => {
 				onMouseLeave={() => setTip('')}
 				className={`${burst ? css.burst : ''} ${css.star} ${css.start}`}
 			>
-				<span className={`${burst ? css.show : ''} ${css.tip}`}> About </span>
+				<span className={`${burst ? css.show : ''} ${css.tip}`}>About</span>
 				<img src={starSvg} />
 			</figure>
 			<figure

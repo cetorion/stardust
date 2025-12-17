@@ -26,12 +26,12 @@ const Site = () => (
 		<Header />
 		<main className={css.view}>
 			<Routes>
-				<Route path="/statement" element={<Mark name="statement" />} />
-				<Route path="/updates" element={<Mark name="updates" />} />
-				<Route path="/statistics" element={<Mark name="statistics" />} />
-				<Route path="/metadata" element={<Mark name="metadata" />} />
-				<Route path="/about" element={<Mark name="about" />} />
-				<Route path="/" element={<Space />} />
+				<Route path='/statement' element={<Mark name='statement' />} />
+				<Route path='/updates' element={<Mark name='updates' />} />
+				<Route path='/statistics' element={<Mark name='statistics' />} />
+				<Route path='/metadata' element={<Mark name='metadata' />} />
+				<Route path='/about' element={<Mark name='about' />} />
+				<Route path='/' element={<Space />} />
 			</Routes>
 		</main>
 		<Footer />

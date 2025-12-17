@@ -1,66 +1,66 @@
 .space {
-  position: relative;
-  aspect-ratio: 9 / 14;
-  height: 100%;
+	position: relative;
+	aspect-ratio: 9 / 14;
+	height: 100%;
 }
 
 .star {
-  position: absolute;
-  filter: drop-shadow(0 1em 1em green);
+	position: absolute;
+	filter: drop-shadow(0 1em 1em green);
 }
 
 .tip {
-  font-size: 0.7em;
-  z-index: 1;
-  visibility: hidden;
+	font-size: 0.7em;
+	z-index: 1;
+	visibility: hidden;
 }
 
 .show {
-  visibility: visible;
+	visibility: visible;
 }
 
 .burst {
-  filter: brightness(1.5);
-  transform: scale(1.2);
+	filter: brightness(1.5);
+	transform: scale(1.2);
 }
 
 .star:hover {
-  filter: brightness(1.5);
-  cursor: pointer;
-  transform: scale(1.2);
+	filter: brightness(1.5);
+	cursor: pointer;
+	transform: scale(1.2);
 }
 
 .start {
-  width: 3em;
-  height: 3em;
-  top: 4%;
-  left: 35%;
+	width: 3em;
+	height: 3em;
+	top: 4%;
+	left: 35%;
 }
 
 .starb {
-  width: 4em;
-  height: 4em;
-  top: 85%;
-  left: 65%;
+	width: 4em;
+	height: 4em;
+	top: 85%;
+	left: 65%;
 }
 
 .starl {
-  width: 3em;
-  height: 3em;
-  top: 40%;
-  left: 4%;
+	width: 3em;
+	height: 3em;
+	top: 40%;
+	left: 4%;
 }
 
 .starr {
-  width: 3em;
-  height: 3em;
-  top: 20%;
-  left: 82%;
+	width: 3em;
+	height: 3em;
+	top: 20%;
+	left: 82%;
 }
 
 .starm {
-  width: 2em;
-  height: 2em;
-  top: 50%;
-  left: 65%;
+	width: 2em;
+	height: 2em;
+	top: 50%;
+	left: 65%;
 }

@@ -1,0 +1,9 @@
+{
+	"fmt": {
+		"lineWidth": 96,
+		"semiColons": false,
+		"singleQuote": true,
+		"indentWidth": 2,
+		"useTabs": true
+	}
+}
